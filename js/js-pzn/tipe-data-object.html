@@ -11,18 +11,28 @@
 
     <script>
 
-        const person = {};
+        const orang = {
+            "nama Lengkap": "Muhammad Firdaus",
+            alamat: "Indonesia",
+            umur: 16
+        };
 
-        //menambah atau mengubah
+        //ubah property atau attribute
 
-        person["nama"] = "Muhammad Firdaus";
-        person["alamat"] = "Indonesia";
-        person["umur"] = "16";
+        // orang["nama"] = "Muhammad Firdaus";
+        // orang["alamat"] = "Indonesia";
+        // orang["umur"] = "16";
+
+        console.info(`Nama : ${orang["nama Lengkap"]}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`umur : ${orang.umur}`);
+
+        console.table(orang);
 
         // menghapus
-        delete person["umur"];
+        delete orang["umur"];
 
-        console.table[person];
+        console.table(orang);
 
 
     </script>
