@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <script>
+
+        // digunakan untuk ==
+
+        const nilai = "A";
+
+        switch (nilai) {
+            case "A":
+                document.writeln("Anda Lulus Dengan Baik");
+                break;
+            case "B":
+            case "C":
+                document.writeln("Anda Lulus");
+                break;
+            case "D":
+                document.writeln("nilai anda kurang");
+                break;
+            default:
+                document.writeln("Mungkin anda salah jurusan");
+
+        }
+
+        // jika di if statment
+
+        if (nilai === "A") {
+            document.writeln("<p>Wow Anda Lulus Dengan Baik</p>");
+        } else if (nilai === "B" || nilai === "C") {
+            document.writeln("<p>Anda Lulus</p>");
+        } else if (nilai === "D") {
+            document.writeln("<p>Anda Tidak Lulus</p>");
+        } else {
+            document.writeln("<p>Mungkin Anda Salah Jurusan</p>");
+        }
+
+    </script>
+
+</body>
+
+</html>
