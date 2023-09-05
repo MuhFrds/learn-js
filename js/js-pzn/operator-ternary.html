@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ternary operator adalah bentuk sederhana dari if statment
+
+        let nilai = 90;
+        let ucapan;
+
+        if (nilai >= 75) {
+            ucapan = "selamat anda lulus";
+        } else {
+            ucapan = "silahkan coba lagi";
+        }
+
+        document.writeln(`<p>${ucapan}</p>`);
+
+        // ternary operator
+        // jika ada kondisi sederhana seperti ini gunakan ternary operator
+
+        ucapan = nilai >= 75 ? "Selamat Anda Lulus" : "Silahkan Coba lagi";
+
+        document.writeln(`<p>${ucapan}</p>`);
+    </script>
+
+</body>
+
+</html>

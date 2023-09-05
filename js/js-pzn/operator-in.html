@@ -22,6 +22,24 @@
             alert("Hello");
         }
 
+        // in tidak peduli value dari sebuah property unefined or null
+
+        const student = {
+            firstName: "Muh",
+            middleName: undefined,
+            lastName: "Firdaus"
+        }
+
+        if ("middleName" in student) {
+            alert(`Hello ${student.middleName}`)
+        } else {
+            alert("Hello Student")
+        }
+
+        const names = [null, "Muh", null];
+        const result = 0 in names;
+        document.writeln(`<p> ${result} </p>`);
+
     </script>
 
 </body>
