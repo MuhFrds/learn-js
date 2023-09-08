@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // or || operator mengambil nilai true dari kanan bila kedua false diambil yang terakhir
+
+        console.info("hello" || "");
+        console.info("" || []);
+        consolq.info("0" || "nol");
+        console.info(0 || "Nol");
+        console.info(null || "null");
+        console.info(undefined || "undefined");
+        console.info(0 || false);
+
+        const person = {
+            firstName: "",
+            lastName: "firdaus"
+        };
+
+        const name = person.firstName || person.lastName;
+        console.info(name)
+
+        // and && operator mengambil nilai false dari kiri bila tidak ada yang false diambil yang terakhir
+
+        console.info("hello" && "");
+        console.info("" && []);
+        consolq.info("0" && "nol");
+        console.info(0 && "Nol");
+        console.info(null && "null");
+        console.info(undefined && "undefined");
+        console.info("undefined" && "null")
+
+    </script>
+
+</body>
+
+</html>
