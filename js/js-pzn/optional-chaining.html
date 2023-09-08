@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* optional chaining digunakan untuk menulis kode 
+        yang akan langsung berhenti menjalankan ekspresi 
+        ketika sebuah nilai null dan undefined ditemukan. */
+
+        const person = {
+            address: {
+                country: "indonesia"
+            }
+        };
+
+
+        let country = person?.address?.country;
+
+        // if (person.address !== undefined && person.address !== null) {
+        //     country = person.address.country;
+        // }
+
+        document.writeln(`SUKSES`);
+        document.writeln(`${country}`);
+        document.writeln(`SUKSES`);
+    </script>
+
+</body>
+
+</html>
