@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // semua bisa digunakan di for jika iterable
+
+        const names = ["Muh", "Muhammad", "Firdaus"];
+
+        for (const name of names) {
+            document.writeln(`<p>${name}</p>`)
+        }
+
+        const fullName = "Muhammad Firdaus"
+
+        for (const character of fullName) {
+            document.writeln(`<p>${character}</p>`)
+        }
+
+        // const person = {
+        //     firstName: "Muh",
+        //     middleName: "Muhammad",
+        //     lastName: "firdauas"
+        // };
+        // for (const orang of person) {
+        //     document.writeln(`<p>${orang}</p>`)
+        // }
+        // Error karena object bukan itrable
+    </script>
+
+</body>
+
+</html>
