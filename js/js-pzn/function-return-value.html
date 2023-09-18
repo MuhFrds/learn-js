@@ -18,6 +18,42 @@
         const result = sayHello("Muh", "Firdaus");
         document.writeln(`<p>${result}</p>`)
 
+
+        // dalam satu function boleh menggunakan banyak kondisi return
+        function getFinalValue(value) {
+            if (value > 90) {
+                return "A";
+            } else if (value > 80) {
+                return "B";
+            } else if (value > 70) {
+                return "C";
+            } else if (value > 60) {
+                return "D";
+            } else {
+                return "E";
+            }
+        }
+
+        const finalValue = getFinalValue(99);
+        document.writeln(`<p> ${finalValue} </p>`)
+
+        // menghentikan function dengan return
+
+        function isContains(array, searchValue) {
+            for (const element of array) {
+                console.info(`iterasi element ${element}`);
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1, 121, 212, 22, 222, 34, 4, 4, 43, 324, 34, 43, 244, 34324, 324,];
+        const search = 43;
+        const found = isContains(array, search);
+        document.writeln(`<p>${found}</p>`)
+
     </script>
 </body>
 
