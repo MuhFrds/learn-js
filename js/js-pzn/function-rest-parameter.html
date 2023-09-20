@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Rest Parameter</title>
+</head>
+
+<body>
+
+    <script>
+
+        // rest parameter
+        // digunakan di paling akhir parameter
+        function sum(name, ...data) {
+            let total = 0;
+            for (const item of data) {
+                total += item;
+            }
+            document.writeln(`<p> total ${name} is ${total} </p>`)
+        }
+
+        sum("orange", 10, 20, 30, 40, 50, 60);
+        sum("apple", 10, 20, 30, 40, 50, 60);
+        sum("banana", 10, 20, 30, 40, 50, 60);
+
+        // spread syntax konversi array menjadi rest parameter
+        const values = [10, 10, 10, 10, 10];
+        sum("test", ...values);
+
+        // sebelum ada rest parameter menggunakan argument
+        //tapi untuk js versi sekarang tidak disarankan menggunkan arguments
+        function oldSum() {
+            let total = 0;
+            for (const argument of arguments) {
+                total += argument;
+            }
+            document.writeln(`<p> total is ${total} </p>`)
+        }
+
+        oldSum(1, 2, 3, 4, 5);
+    </script>
+
+</body>
+
+</html>
