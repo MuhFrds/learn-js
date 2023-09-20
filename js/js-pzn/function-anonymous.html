@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let say = function (name) {
+            document.writeln(`<p>Hello ${name}</p>`);
+        }
+
+        say("Muh");
+        say("Frds");
+
+        function giveMeName(callback) {
+            callback("MuhF");
+        }
+
+        giveMeName(say);
+
+        giveMeName(function (name) {
+            document.writeln(`<p>Hi ${name}</p>`);
+        });
+
+        giveMeName(function (name) {
+            document.writeln(`<p>Hi ${name}</p>`);
+        });
+
+        giveMeName(function (name) {
+            document.writeln(`<p>Hi ${name}</p>`);
+        });
+
+    </script>
+
+</body>
+
+</html>
