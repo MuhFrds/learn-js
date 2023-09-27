@@ -34,7 +34,7 @@
         }
 
         // eager
-        function* buatGanjilArray(value) {
+        function buatGanjilArray(value) {
             const result = [];
             for (let i = 1; i <= value; i++) {
                 if (i % 2 === 1) {
@@ -46,10 +46,13 @@
         }
 
         const numbers = buatGanjil(100);
-        for (const number of numbers) {
-            console.log(number);
-        }
+        // for (const number of numbers) {
+        //     console.log(number);
+        // }
 
+        console.info(numbers.next().value);
+        console.info(numbers.next().value);
+        console.info(numbers.next().value);
 
     </script>
 
