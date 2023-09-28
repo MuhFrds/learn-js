@@ -11,12 +11,40 @@
 
     <script>
 
-        const sayHello = (name) => {
-            const say = `Hello ${name}`
-            console.info(say);
-        }
+        // const sayHello = (name) => {
+        //     const say = `Hello ${name}`
+        //     console.info(say);
+        // }
+
+        // arrow function bisa menggunakan tanpa {} jika sangat sederhana dan satu baris
+        // jika parameter function hanya 1 bisa tidak menggunakan ()
+
+        // const sayHello = (name) => console.info(`Hello ${name}`)
+        const sayHello = name => console.info(`Hello ${name}`)
 
         sayHello("Muh");
+
+        // const sum = (first, second) => {
+        //     return first + second;
+        // }
+
+        const sum = (first, second) => first + second;
+
+        console.log(sum(100, 100));
+
+        // memanggil arrow function dalam function
+
+        function giveMeName(callback) {
+            callback("Firdaus")
+        }
+
+        // Anonymous Function
+        // giveMeName(function (name) {
+        //     console.info(`Hello ${name}`);
+        // })
+
+        // Arrow
+        giveMeName(name => console.info(`Hello ${name}`));
 
     </script>
 
