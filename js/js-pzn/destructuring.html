@@ -43,6 +43,74 @@
             console.log(others);
         }
 
+        {
+
+            function displayPerson({ firstName, middleName, lastName }) {
+                console.info(firstName);
+                console.info(middleName);
+                console.info(lastName);
+            };
+
+            const person = {
+                firstName: "Muh",
+                middleName: "Muhammad",
+                lastName: "Firdaus"
+            };
+
+            displayPerson(person);
+        }
+
+        {
+            function sum([first, second]) {
+                return first + second;
+            }
+
+            console.log(sum([1, 1]));
+            console.log(sum([10, 10]));
+        }
+
+        {
+            const names = ["Muh", "Budi", "Joko"]; // jika sudah ada datanya yang akan diambil datanya
+
+            const [firstName, middleName = "Frds", lastName = "Firdaus"] = names;
+
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+        }
+
+        {
+            const person = {
+                firstName: "Muh",
+                middleName: "Budi",
+                lastName: "Firdaus",
+            };
+
+            let { firstName, middleName = "Frds", lastName } = person;
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+        }
+
+
+        {
+            const person = {
+                firstName: "Muh",
+                middleName: "Budi",
+                lastName: "Firdaus",
+            };
+
+            let { firstName: namaDepan,
+                middleName: namaTengah = "Frds",
+                lastName: namaBelakang } = person;
+            console.log(namaDepan);
+            console.log(namaTengah);
+            console.log(namaBelakang);
+        }
+
+
+
+
     </script>
 </body>
 
