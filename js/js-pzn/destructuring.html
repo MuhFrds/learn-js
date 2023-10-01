@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        {
+            const names = ["Muh", "Muhammad", "Firdaus", "Budi", "Joko"];
+
+            let [firstName, middleName, lastName, ...others] = names;
+
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+            console.log(others);
+        }
+
+        {
+            const person = {
+                firstName: "Muh",
+                lastName: "Firdaus",
+                address: {
+                    street: "jalan belum ada",
+                    city: "jakarta",
+                    country: "indonesia",
+                },
+                hobby: "coding",
+                channel: "progammer zaman now"
+            };
+
+            let { firstName, lastName, address: { country, city, street }, ...others } = person;
+            console.log(firstName);
+            console.log(lastName);
+            console.log(city);
+            console.log(street);
+            console.log(country);
+            console.log(others);
+        }
+
+    </script>
+</body>
+
+</html>
